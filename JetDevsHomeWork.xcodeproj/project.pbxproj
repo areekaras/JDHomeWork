@@ -48,6 +48,20 @@
 		60A9F12529472CA4001A2D57 /* JDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F12429472CA4001A2D57 /* JDButton.swift */; };
 		60A9F12B29472E77001A2D57 /* UIColor+JetDevs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F12A29472E77001A2D57 /* UIColor+JetDevs.swift */; };
 		60A9F13029472F99001A2D57 /* String+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F12F29472F98001A2D57 /* String+UIColor.swift */; };
+		60A9F133294774AB001A2D57 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F132294774AB001A2D57 /* Networking.swift */; };
+		60A9F135294774D0001A2D57 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F134294774D0001A2D57 /* Endpoint.swift */; };
+		60A9F137294774DD001A2D57 /* HTTPNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F136294774DD001A2D57 /* HTTPNetworking.swift */; };
+		60A9F13A29477505001A2D57 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F13929477505001A2D57 /* HTTPURLResponse+StatusCode.swift */; };
+		60A9F13C29477513001A2D57 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F13B29477513001A2D57 /* Dictionary+Extensions.swift */; };
+		60A9F13E29477525001A2D57 /* Characterset+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F13D29477525001A2D57 /* Characterset+Extensions.swift */; };
+		60A9F14029477538001A2D57 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F13F29477538001A2D57 /* URLRequest+Extensions.swift */; };
+		60A9F14429477924001A2D57 /* JDAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14329477924001A2D57 /* JDAuthenticator.swift */; };
+		60A9F1462947798B001A2D57 /* JDLoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F1452947798B001A2D57 /* JDLoginData.swift */; };
+		60A9F14829477996001A2D57 /* JDUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14729477996001A2D57 /* JDUser.swift */; };
+		60A9F14A29477AAA001A2D57 /* RemoteJDAuthenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14929477AAA001A2D57 /* RemoteJDAuthenticate.swift */; };
+		60A9F14C29477ABE001A2D57 /* RemoteJDAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14B29477ABE001A2D57 /* RemoteJDAuthenticator.swift */; };
+		60A9F14E29477AE1001A2D57 /* RemoteJDLoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14D29477AE1001A2D57 /* RemoteJDLoginData.swift */; };
+		60A9F15029477AEE001A2D57 /* RemoteJDLoginDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14F29477AEE001A2D57 /* RemoteJDLoginDataMapper.swift */; };
 		9EC6505DC386FCB04480F4BB /* Pods_JetDevsHomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00AF71BC0DB1CFCDB921924 /* Pods_JetDevsHomeWork.framework */; };
 		9FBC8F0B168679446BE08275 /* Pods_JetDevsHomeWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E168756431AD9B671DACC28B /* Pods_JetDevsHomeWorkTests.framework */; };
 		DD9CD5C395D5FAE03F59B68E /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */; };
@@ -121,6 +135,20 @@
 		60A9F12429472CA4001A2D57 /* JDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDButton.swift; sourceTree = "<group>"; };
 		60A9F12A29472E77001A2D57 /* UIColor+JetDevs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+JetDevs.swift"; sourceTree = "<group>"; };
 		60A9F12F29472F98001A2D57 /* String+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIColor.swift"; sourceTree = "<group>"; };
+		60A9F132294774AB001A2D57 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		60A9F134294774D0001A2D57 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		60A9F136294774DD001A2D57 /* HTTPNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworking.swift; sourceTree = "<group>"; };
+		60A9F13929477505001A2D57 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		60A9F13B29477513001A2D57 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		60A9F13D29477525001A2D57 /* Characterset+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Characterset+Extensions.swift"; sourceTree = "<group>"; };
+		60A9F13F29477538001A2D57 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		60A9F14329477924001A2D57 /* JDAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDAuthenticator.swift; sourceTree = "<group>"; };
+		60A9F1452947798B001A2D57 /* JDLoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDLoginData.swift; sourceTree = "<group>"; };
+		60A9F14729477996001A2D57 /* JDUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDUser.swift; sourceTree = "<group>"; };
+		60A9F14929477AAA001A2D57 /* RemoteJDAuthenticate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteJDAuthenticate.swift; sourceTree = "<group>"; };
+		60A9F14B29477ABE001A2D57 /* RemoteJDAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteJDAuthenticator.swift; sourceTree = "<group>"; };
+		60A9F14D29477AE1001A2D57 /* RemoteJDLoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteJDLoginData.swift; sourceTree = "<group>"; };
+		60A9F14F29477AEE001A2D57 /* RemoteJDLoginDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteJDLoginDataMapper.swift; sourceTree = "<group>"; };
 		B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC5ABA8B83EB7FC725CD65 /* Pods-JetDevsHomeWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWorkTests.release.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWorkTests/Pods-JetDevsHomeWorkTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB6150528480C26B23B54A3E /* Pods-JetDevsHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWork.debug.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWork/Pods-JetDevsHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +210,7 @@
 		4E677BCC272B827F006E325E /* JetDevsHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				60A9F1312947741A001A2D57 /* Network */,
 				4E677C12272B860A006E325E /* Common */,
 				60A9F1112947112C001A2D57 /* Login */,
 				4E677C01272B8367006E325E /* Account */,
@@ -323,6 +352,8 @@
 		60A9F1112947112C001A2D57 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				60A9F14129477800001A2D57 /* Feature */,
+				60A9F14229477808001A2D57 /* API */,
 				60A9F11A29471A93001A2D57 /* Views */,
 				60A9F11229471134001A2D57 /* ViewController */,
 			);
@@ -394,6 +425,49 @@
 				60A9F12F29472F98001A2D57 /* String+UIColor.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		60A9F1312947741A001A2D57 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				60A9F132294774AB001A2D57 /* Networking.swift */,
+				60A9F134294774D0001A2D57 /* Endpoint.swift */,
+				60A9F136294774DD001A2D57 /* HTTPNetworking.swift */,
+				60A9F138294774EA001A2D57 /* Helpers */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		60A9F138294774EA001A2D57 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				60A9F13929477505001A2D57 /* HTTPURLResponse+StatusCode.swift */,
+				60A9F13B29477513001A2D57 /* Dictionary+Extensions.swift */,
+				60A9F13D29477525001A2D57 /* Characterset+Extensions.swift */,
+				60A9F13F29477538001A2D57 /* URLRequest+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		60A9F14129477800001A2D57 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				60A9F14329477924001A2D57 /* JDAuthenticator.swift */,
+				60A9F1452947798B001A2D57 /* JDLoginData.swift */,
+				60A9F14729477996001A2D57 /* JDUser.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		60A9F14229477808001A2D57 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				60A9F14B29477ABE001A2D57 /* RemoteJDAuthenticator.swift */,
+				60A9F14D29477AE1001A2D57 /* RemoteJDLoginData.swift */,
+				60A9F14F29477AEE001A2D57 /* RemoteJDLoginDataMapper.swift */,
+				60A9F14929477AAA001A2D57 /* RemoteJDAuthenticate.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		C87474AC52CF468FB6DCCA19 /* Pods */ = {
@@ -698,18 +772,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E677BFF272B8319006E325E /* BaseTabBarController.swift in Sources */,
+				60A9F14E29477AE1001A2D57 /* RemoteJDLoginData.swift in Sources */,
 				4E677C10272B8455006E325E /* AccountViewController.swift in Sources */,
 				60A9F12B29472E77001A2D57 /* UIColor+JetDevs.swift in Sources */,
 				60A9F11929471536001A2D57 /* UIStoryboard+JetDevs.swift in Sources */,
 				60A9F12529472CA4001A2D57 /* JDButton.swift in Sources */,
 				60A9F11D29471ABB001A2D57 /* JDTextField.swift in Sources */,
+				60A9F133294774AB001A2D57 /* Networking.swift in Sources */,
+				60A9F14429477924001A2D57 /* JDAuthenticator.swift in Sources */,
 				4E677BD2272B827F006E325E /* ViewController.swift in Sources */,
+				60A9F13C29477513001A2D57 /* Dictionary+Extensions.swift in Sources */,
+				60A9F1462947798B001A2D57 /* JDLoginData.swift in Sources */,
 				60A9F13029472F99001A2D57 /* String+UIColor.swift in Sources */,
+				60A9F137294774DD001A2D57 /* HTTPNetworking.swift in Sources */,
 				4E677C4C273230E5006E325E /* UIFont+JetDevs.swift in Sources */,
+				60A9F13E29477525001A2D57 /* Characterset+Extensions.swift in Sources */,
+				60A9F135294774D0001A2D57 /* Endpoint.swift in Sources */,
 				60A9F12229471C10001A2D57 /* UIView+Layout.swift in Sources */,
 				60A9F1162947116B001A2D57 /* LoginViewController.swift in Sources */,
 				4E677C15272B8650006E325E /* Constants.swift in Sources */,
 				4E677BCE272B827F006E325E /* AppDelegate.swift in Sources */,
+				60A9F14829477996001A2D57 /* JDUser.swift in Sources */,
+				60A9F14029477538001A2D57 /* URLRequest+Extensions.swift in Sources */,
+				60A9F13A29477505001A2D57 /* HTTPURLResponse+StatusCode.swift in Sources */,
+				60A9F14C29477ABE001A2D57 /* RemoteJDAuthenticator.swift in Sources */,
+				60A9F14A29477AAA001A2D57 /* RemoteJDAuthenticate.swift in Sources */,
+				60A9F15029477AEE001A2D57 /* RemoteJDLoginDataMapper.swift in Sources */,
 				4E677C18272B88A6006E325E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
