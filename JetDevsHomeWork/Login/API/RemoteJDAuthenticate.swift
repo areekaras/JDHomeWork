@@ -5,7 +5,6 @@
 //  Created by Shibili Areekara on 12/12/22.
 //
 
-
 enum RemoteJDAuthenticate {
     
     case login(params: JDAuthenticatorParams)
@@ -24,14 +23,14 @@ extension RemoteJDAuthenticate: Endpoint {
         }
     }
     
-    var headers: [String : String]? {
+    var headers: [String: String]? {
         switch self {
         case .login:
             return nil
         }
     }
     
-    var params: [String : Any]? {
+    var params: [String: Any]? {
         switch self {
         case let .login(params):
             return getLoginParams(from: params)
@@ -52,7 +51,7 @@ extension RemoteJDAuthenticate: Endpoint {
         }
     }
     
-    private func getLoginParams(from params: JDAuthenticatorParams) {
+    private func getLoginParams(from params: JDAuthenticatorParams) -> [String: Any] {
         return ["email": params.email, "password": params.password]
     }
 }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-​
+
 final class RemoteJDAuthenticator: JDAuthenticator {
     
     private let networking: Networking
@@ -24,7 +24,10 @@ final class RemoteJDAuthenticator: JDAuthenticator {
     
     func login(params: JDAuthenticatorParams, completion: @escaping (Result) -> Void) {
         networking.request(from: RemoteJDAuthenticate.login(params: params)) { [weak self] result in
-            guard self != nil else { return }
+            guard self != nil
+            else {
+                return
+            }
             
             switch result {
             case let .success((data, response)):
@@ -45,16 +48,23 @@ final class RemoteJDAuthenticator: JDAuthenticator {
         }
     }
 }
-​
-​
+
 private extension RemoteJDLoginData {
     
-    func toModel() -> JDLoginData {
-        return JDLoginData(user: data?.user?.toModel(),
-                           error: error_message)
+    func toModel() throws -> JDLoginData {
+        guard error_message.isEmpty,
+              let user = data?.user
+        else {
+            throw NSError(domain: "API Error", code: 401, userInfo: [
+                NSLocalizedDescriptionKey: error_message
+            ])
+        }
+        
+        return JDLoginData(user: user.toModel(),
+                           error: "")
     }
 }
-​
+
 private extension RemoteJDLoginDataUser {
     
     func toModel() -> JDUser {
@@ -64,4 +74,3 @@ private extension RemoteJDLoginDataUser {
                       createdAt: created_at)
     }
 }
-

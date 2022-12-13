@@ -62,6 +62,9 @@
                                         <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="M7B-7V-ZHJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

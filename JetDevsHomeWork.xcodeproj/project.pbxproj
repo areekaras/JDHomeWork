@@ -39,6 +39,7 @@
 		4E677C4727322FA4006E325E /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E677C3527322FA4006E325E /* Lato-Semibold.ttf */; };
 		4E677C4827322FA5006E325E /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E677C3627322FA4006E325E /* Lato-ThinItalic.ttf */; };
 		4E677C4C273230E5006E325E /* UIFont+JetDevs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E677C4B273230E5006E325E /* UIFont+JetDevs.swift */; };
+		609A1B422948422200A25C55 /* UIAlertController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A1B412948422200A25C55 /* UIAlertController+alert.swift */; };
 		60A9F1142947114C001A2D57 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A9F1132947114C001A2D57 /* LoginViewController.storyboard */; };
 		60A9F1162947116B001A2D57 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F1152947116B001A2D57 /* LoginViewController.swift */; };
 		60A9F11929471536001A2D57 /* UIStoryboard+JetDevs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F11829471536001A2D57 /* UIStoryboard+JetDevs.swift */; };
@@ -62,6 +63,7 @@
 		60A9F14C29477ABE001A2D57 /* RemoteJDAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14B29477ABE001A2D57 /* RemoteJDAuthenticator.swift */; };
 		60A9F14E29477AE1001A2D57 /* RemoteJDLoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14D29477AE1001A2D57 /* RemoteJDLoginData.swift */; };
 		60A9F15029477AEE001A2D57 /* RemoteJDLoginDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F14F29477AEE001A2D57 /* RemoteJDLoginDataMapper.swift */; };
+		60A9F153294781E2001A2D57 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9F152294781E2001A2D57 /* LoginViewViewModel.swift */; };
 		9EC6505DC386FCB04480F4BB /* Pods_JetDevsHomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00AF71BC0DB1CFCDB921924 /* Pods_JetDevsHomeWork.framework */; };
 		9FBC8F0B168679446BE08275 /* Pods_JetDevsHomeWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E168756431AD9B671DACC28B /* Pods_JetDevsHomeWorkTests.framework */; };
 		DD9CD5C395D5FAE03F59B68E /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */; };
@@ -126,6 +128,7 @@
 		4E677C3527322FA4006E325E /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
 		4E677C3627322FA4006E325E /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4E677C4B273230E5006E325E /* UIFont+JetDevs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+JetDevs.swift"; sourceTree = "<group>"; };
+		609A1B412948422200A25C55 /* UIAlertController+alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+alert.swift"; sourceTree = "<group>"; };
 		60A9F1132947114C001A2D57 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		60A9F1152947116B001A2D57 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		60A9F11829471536001A2D57 /* UIStoryboard+JetDevs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+JetDevs.swift"; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 		60A9F14B29477ABE001A2D57 /* RemoteJDAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteJDAuthenticator.swift; sourceTree = "<group>"; };
 		60A9F14D29477AE1001A2D57 /* RemoteJDLoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteJDLoginData.swift; sourceTree = "<group>"; };
 		60A9F14F29477AEE001A2D57 /* RemoteJDLoginDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteJDLoginDataMapper.swift; sourceTree = "<group>"; };
+		60A9F152294781E2001A2D57 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC5ABA8B83EB7FC725CD65 /* Pods-JetDevsHomeWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWorkTests.release.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWorkTests/Pods-JetDevsHomeWorkTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB6150528480C26B23B54A3E /* Pods-JetDevsHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWork.debug.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWork/Pods-JetDevsHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -332,6 +336,7 @@
 		4E677C4927323092006E325E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				609A1B402948411500A25C55 /* UIAlertController */,
 				60A9F12E29472F8D001A2D57 /* String */,
 				60A9F12929472E65001A2D57 /* UIColor */,
 				60A9F12029471BD7001A2D57 /* UIView */,
@@ -349,11 +354,20 @@
 			path = UIFont;
 			sourceTree = "<group>";
 		};
+		609A1B402948411500A25C55 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				609A1B412948422200A25C55 /* UIAlertController+alert.swift */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
 		60A9F1112947112C001A2D57 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				60A9F14129477800001A2D57 /* Feature */,
 				60A9F14229477808001A2D57 /* API */,
+				60A9F151294781AA001A2D57 /* ViewModel */,
 				60A9F11A29471A93001A2D57 /* Views */,
 				60A9F11229471134001A2D57 /* ViewController */,
 			);
@@ -468,6 +482,14 @@
 				60A9F14929477AAA001A2D57 /* RemoteJDAuthenticate.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		60A9F151294781AA001A2D57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				60A9F152294781E2001A2D57 /* LoginViewViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C87474AC52CF468FB6DCCA19 /* Pods */ = {
@@ -776,6 +798,7 @@
 				4E677C10272B8455006E325E /* AccountViewController.swift in Sources */,
 				60A9F12B29472E77001A2D57 /* UIColor+JetDevs.swift in Sources */,
 				60A9F11929471536001A2D57 /* UIStoryboard+JetDevs.swift in Sources */,
+				60A9F153294781E2001A2D57 /* LoginViewViewModel.swift in Sources */,
 				60A9F12529472CA4001A2D57 /* JDButton.swift in Sources */,
 				60A9F11D29471ABB001A2D57 /* JDTextField.swift in Sources */,
 				60A9F133294774AB001A2D57 /* Networking.swift in Sources */,
@@ -793,6 +816,7 @@
 				4E677C15272B8650006E325E /* Constants.swift in Sources */,
 				4E677BCE272B827F006E325E /* AppDelegate.swift in Sources */,
 				60A9F14829477996001A2D57 /* JDUser.swift in Sources */,
+				609A1B422948422200A25C55 /* UIAlertController+alert.swift in Sources */,
 				60A9F14029477538001A2D57 /* URLRequest+Extensions.swift in Sources */,
 				60A9F13A29477505001A2D57 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				60A9F14C29477ABE001A2D57 /* RemoteJDAuthenticator.swift in Sources */,

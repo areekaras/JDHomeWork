@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
     @IBOutlet private(set) weak var emailTF: JDTextField!
     @IBOutlet private(set) weak var passwordTF: JDTextField!
     @IBOutlet private(set) weak var loginButton: JDButton!
+    
+    var viewModel = LoginViewViewModel(authenticator: RemoteJDAuthenticator(networking: HTTPNetworking()))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,18 @@ class LoginViewController: UIViewController {
     
     @IBAction func closeButtonTap(_ sender: AnyObject) {
         self.dismiss(animated: true)
+    }
+    
+    @IBAction func loginButtonTap(_ sender: AnyObject) {
+        viewModel.authenticate { error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    UIAlertController.alert(message: error.localizedDescription)
+                } else {
+                    UIAlertController.alert(message: "Success")
+                }
+            }
+        }
     }
     
     private func setupEmailTF() {
