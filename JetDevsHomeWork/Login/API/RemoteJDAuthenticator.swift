@@ -41,7 +41,7 @@ final class RemoteJDAuthenticator: JDAuthenticator {
     private static func map(_ data: Data, from response: HTTPURLResponse) -> Result {
         do {
             let dataModel = try RemoteJDLoginDataMapper.map(data, from: response)
-            let featureModel = try dataModel.toModel()
+            let featureModel = try dataModel.toUserModel()
             return .success(featureModel)
         } catch {
             return .failure(error)
@@ -51,7 +51,7 @@ final class RemoteJDAuthenticator: JDAuthenticator {
 
 private extension RemoteJDLoginData {
     
-    func toModel() throws -> JDLoginData {
+    func toUserModel() throws -> JDUser {
         guard error_message.isEmpty,
               let user = data?.user
         else {
@@ -60,15 +60,14 @@ private extension RemoteJDLoginData {
             ])
         }
         
-        return JDLoginData(user: user.toModel(),
-                           error: "")
+        return user.toModel()
     }
 }
 
 private extension RemoteJDLoginDataUser {
     
     func toModel() -> JDUser {
-        return JDUser(id: user_id,
+        return JDUser(userID: user_id,
                       name: user_name,
                       profileURL: user_profile_url,
                       createdAt: created_at)

@@ -8,13 +8,14 @@
 import Foundation
 
 struct JDAuthenticatorParams {
+    
     let email: String
     let password: String
 }
 
 protocol JDAuthenticator {
     
-    typealias Result = Swift.Result<JDLoginData, Error>
+    typealias Result = Swift.Result<JDUser, Error>
       
     func login(params: JDAuthenticatorParams, completion: @escaping (Result) -> Void)
 }

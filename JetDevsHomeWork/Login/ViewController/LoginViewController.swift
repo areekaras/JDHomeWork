@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
                 if let error = error {
                     UIAlertController.alert(message: error.localizedDescription)
                 } else {
-                    UIAlertController.alert(message: "Success")
+                    self.dismiss(animated: true)
                 }
             }
         }
