@@ -1,11 +1,11 @@
 //
-//  JDUser.swift
+//  JDLocalUser.swift
 //  JetDevsHomeWork
 //
-//  Created by Shibili Areekara on 12/12/22.
+//  Created by Shibili Areekara on 13/12/22.
 //
 
-struct JDUser {
+struct JDLocalUser: Codable {
     
     let userID: Int
     let name: String
