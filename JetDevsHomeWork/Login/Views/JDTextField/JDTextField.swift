@@ -13,6 +13,9 @@ class JDTextField: UIView {
     @IBOutlet private(set) weak var textFieldLabel: UILabel!
     @IBOutlet private(set) weak var textField: UITextField!
     
+    var textFieldDidChange: ((String) -> Void)?
+    var textFieldShouldReturn: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -32,6 +35,8 @@ class JDTextField: UIView {
         
         mainView.frame = bounds
         mainView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        textField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
     func setTextFieldLabel(with text: String) {
@@ -40,11 +45,21 @@ class JDTextField: UIView {
     
     func setTextField(placeholder: String,
                       keyboardType: UIKeyboardType = .default,
-                      returnKeyType: UIReturnKeyType = .next,
                       secureEntry: Bool = false) {
         textField.placeholder = placeholder
         textField.keyboardType = keyboardType
         textField.isSecureTextEntry = secureEntry
-        textField.returnKeyType = returnKeyType
+    }
+}
+
+extension JDTextField: UITextFieldDelegate {
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        textFieldDidChange?(textField.text ?? "")
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textFieldShouldReturn?()
+        return true
     }
 }

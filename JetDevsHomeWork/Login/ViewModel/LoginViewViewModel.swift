@@ -15,9 +15,24 @@ class LoginViewViewModel {
         self.authenticator = authenticator
     }
     
+    private var email = ""
+    private var password = ""
+    
+    func setEmail(with text: String) {
+        email = text
+    }
+    
+    func setPassword(with text: String) {
+        password = text
+    }
+    
+    var isValid: Bool {
+        return (email.isValidEmail && password.isValidPassword)
+    }
+    
     func authenticate(completion: @escaping (Error?) -> Void) {
-        let params = JDAuthenticatorParams(email: "test@jetdevs.com",
-                                           password: "Jetdevs2021")
+        let params = JDAuthenticatorParams(email: email,
+                                           password: password)
         
         authenticator.login(params: params) { [weak self] result in
             guard let self = self else {
@@ -34,7 +49,7 @@ class LoginViewViewModel {
         }
     }
     
-    func saveUserData(user: JDUser){
+    func saveUserData(user: JDUser) {
         let localUser = user.toLocalModel()
         
         let encoder = JSONEncoder()

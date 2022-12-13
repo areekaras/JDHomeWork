@@ -28,6 +28,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTap(_ sender: AnyObject) {
+        authenticate()
+    }
+    
+    private func authenticate() {
         viewModel.authenticate { error in
             DispatchQueue.main.async {
                 if let error = error {
@@ -43,17 +47,40 @@ class LoginViewController: UIViewController {
         emailTF.setTextFieldLabel(with: "Email")
         emailTF.setTextField(placeholder: "Email",
                              keyboardType: .emailAddress)
+        
+        emailTF.textFieldDidChange = setEmail(with:)
+        emailTF.textFieldShouldReturn = dismissKeyBoard
     }
     
     private func setupPasswordTF() {
         passwordTF.setTextFieldLabel(with: "Password")
         passwordTF.setTextField(placeholder: "Password",
-                                returnKeyType: .done,
                                 secureEntry: true)
+        
+        passwordTF.textFieldDidChange = setPassword(with:)
+        passwordTF.textFieldShouldReturn = dismissKeyBoard
     }
     
     private func setupLoginButton() {
         loginButton.initUI()
-        loginButton.isButtonEnabled = true
+        hanldeLoginButton()
+    }
+    
+    private func hanldeLoginButton() {
+        loginButton.isButtonEnabled = viewModel.isValid
+    }
+    
+    private func setEmail(with text: String) {
+        viewModel.setEmail(with: text)
+        hanldeLoginButton()
+    }
+    
+    private func setPassword(with text: String) {
+        viewModel.setPassword(with: text)
+        hanldeLoginButton()
+    }
+    
+    private func dismissKeyBoard() {
+        view.endEditing(true)
     }
 }

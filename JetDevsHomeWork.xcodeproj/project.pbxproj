@@ -68,6 +68,7 @@
 		60AFB09D294857FE00800798 /* AccountsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AFB09C294857FE00800798 /* AccountsViewViewModel.swift */; };
 		60AFB0A029485E6400800798 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AFB09F29485E6400800798 /* Date.swift */; };
 		60AFB0A229485E7D00800798 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AFB0A129485E7D00800798 /* String+Date.swift */; };
+		60AFB0A42948656C00800798 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AFB0A32948656C00800798 /* String+Validation.swift */; };
 		9EC6505DC386FCB04480F4BB /* Pods_JetDevsHomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00AF71BC0DB1CFCDB921924 /* Pods_JetDevsHomeWork.framework */; };
 		9FBC8F0B168679446BE08275 /* Pods_JetDevsHomeWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E168756431AD9B671DACC28B /* Pods_JetDevsHomeWorkTests.framework */; };
 		DD9CD5C395D5FAE03F59B68E /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */; };
@@ -161,6 +162,7 @@
 		60AFB09C294857FE00800798 /* AccountsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewViewModel.swift; sourceTree = "<group>"; };
 		60AFB09F29485E6400800798 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		60AFB0A129485E7D00800798 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		60AFB0A32948656C00800798 /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
 		B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC5ABA8B83EB7FC725CD65 /* Pods-JetDevsHomeWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWorkTests.release.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWorkTests/Pods-JetDevsHomeWorkTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB6150528480C26B23B54A3E /* Pods-JetDevsHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWork.debug.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWork/Pods-JetDevsHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 			children = (
 				60A9F12F29472F98001A2D57 /* String+UIColor.swift */,
 				60AFB0A129485E7D00800798 /* String+Date.swift */,
+				60AFB0A32948656C00800798 /* String+Validation.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -835,6 +838,7 @@
 				60A9F12B29472E77001A2D57 /* UIColor+JetDevs.swift in Sources */,
 				60A9F11929471536001A2D57 /* UIStoryboard+JetDevs.swift in Sources */,
 				60A9F153294781E2001A2D57 /* LoginViewViewModel.swift in Sources */,
+				60AFB0A42948656C00800798 /* String+Validation.swift in Sources */,
 				60A9F12529472CA4001A2D57 /* JDButton.swift in Sources */,
 				60A9F11D29471ABB001A2D57 /* JDTextField.swift in Sources */,
 				60A9F133294774AB001A2D57 /* Networking.swift in Sources */,
