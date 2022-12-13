@@ -38,9 +38,20 @@ class AccountViewController: UIViewController {
             
             if let user = user {
                 self.show(login: false)
+                self.loadUserData(user: user)
             } else {
                 self.show(login: true)
             }
+        }
+    }
+    
+    private func loadUserData(user: JDLocalUser) {
+        nameLabel.text = user.name
+        
+        if !user.profileURL.isEmpty,
+           let url = URL(string: user.profileURL) {
+            let placeholder = UIImage(named: "Avatar")
+            headImageView.kf.setImage(with: url, placeholder: placeholder)
         }
     }
     
