@@ -23,4 +23,14 @@ class AccountsViewViewModel {
             completion(nil)
         }
     }
+    
+    func getNumberOfDays(from date: String) -> String {
+        guard let date = date.toDate() else {
+            return "Created 0 days ago"
+        }
+        
+        let daysDiff = abs(date.getDaysDiff(from: Date()))
+        
+        return "Created \(daysDiff) days ago"
+    }
 }

@@ -47,6 +47,7 @@ class AccountViewController: UIViewController {
     
     private func loadUserData(user: JDLocalUser) {
         nameLabel.text = user.name
+        daysLabel.text = viewModel.getNumberOfDays(from: user.createdAt)
         
         if !user.profileURL.isEmpty,
            let url = URL(string: user.profileURL) {
