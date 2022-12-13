@@ -13,14 +13,18 @@ class LoginViewController: UIViewController {
     @IBOutlet private(set) weak var passwordTF: JDTextField!
     @IBOutlet private(set) weak var loginButton: JDButton!
     
+    var loaderView: UIActivityIndicatorView!
+    
     var viewModel = LoginViewViewModel(authenticator: RemoteJDAuthenticator(networking: HTTPNetworking()))
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupEmailTF()
         setupPasswordTF()
         setupLoginButton()
+        
+        setIndicatorView()
     }
     
     @IBAction func closeButtonTap(_ sender: AnyObject) {
@@ -32,12 +36,16 @@ class LoginViewController: UIViewController {
     }
     
     private func authenticate() {
-        viewModel.authenticate { error in
+        startLoading()
+        
+        viewModel.authenticate { [weak self] error in
             DispatchQueue.main.async {
+                self?.stopLoading()
+                
                 if let error = error {
                     UIAlertController.alert(message: error.localizedDescription)
                 } else {
-                    self.dismiss(animated: true)
+                    self?.dismiss(animated: true)
                 }
             }
         }
@@ -78,6 +86,21 @@ class LoginViewController: UIViewController {
     private func setPassword(with text: String) {
         viewModel.setPassword(with: text)
         hanldeLoginButton()
+    }
+    
+    private func setIndicatorView() {
+        loaderView = UIActivityIndicatorView.activityIndicator(center: self.view.center)
+        self.view.addSubview(loaderView)
+    }
+    
+    private func startLoading() {
+        loaderView.startAnimating()
+        view.isUserInteractionEnabled = false
+    }
+    
+    private func stopLoading() {
+        loaderView.stopAnimating()
+        view.isUserInteractionEnabled = true
     }
     
     private func dismissKeyBoard() {

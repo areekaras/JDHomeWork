@@ -69,6 +69,7 @@
 		60AFB0A029485E6400800798 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AFB09F29485E6400800798 /* Date.swift */; };
 		60AFB0A229485E7D00800798 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AFB0A129485E7D00800798 /* String+Date.swift */; };
 		60AFB0A42948656C00800798 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AFB0A32948656C00800798 /* String+Validation.swift */; };
+		60AFB0A729486D9D00800798 /* UIActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AFB0A629486D9D00800798 /* UIActivityIndicator.swift */; };
 		9EC6505DC386FCB04480F4BB /* Pods_JetDevsHomeWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00AF71BC0DB1CFCDB921924 /* Pods_JetDevsHomeWork.framework */; };
 		9FBC8F0B168679446BE08275 /* Pods_JetDevsHomeWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E168756431AD9B671DACC28B /* Pods_JetDevsHomeWorkTests.framework */; };
 		DD9CD5C395D5FAE03F59B68E /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */; };
@@ -163,6 +164,7 @@
 		60AFB09F29485E6400800798 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		60AFB0A129485E7D00800798 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		60AFB0A32948656C00800798 /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		60AFB0A629486D9D00800798 /* UIActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicator.swift; sourceTree = "<group>"; };
 		B2FFF8B3EB514C818C31135B /* Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDevsHomeWork_JetDevsHomeWorkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EC5ABA8B83EB7FC725CD65 /* Pods-JetDevsHomeWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWorkTests.release.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWorkTests/Pods-JetDevsHomeWorkTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB6150528480C26B23B54A3E /* Pods-JetDevsHomeWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDevsHomeWork.debug.xcconfig"; path = "Target Support Files/Pods-JetDevsHomeWork/Pods-JetDevsHomeWork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 		4E677C4927323092006E325E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				60AFB0A529486D8900800798 /* UIActivityIndicator */,
 				60AFB09E29485E4D00800798 /* Date */,
 				609A1B402948411500A25C55 /* UIAlertController */,
 				60A9F12E29472F8D001A2D57 /* String */,
@@ -529,6 +532,14 @@
 				60AFB09F29485E6400800798 /* Date.swift */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		60AFB0A529486D8900800798 /* UIActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				60AFB0A629486D9D00800798 /* UIActivityIndicator.swift */,
+			);
+			path = UIActivityIndicator;
 			sourceTree = "<group>";
 		};
 		C87474AC52CF468FB6DCCA19 /* Pods */ = {
@@ -864,6 +875,7 @@
 				60AFB0A229485E7D00800798 /* String+Date.swift in Sources */,
 				60A9F15029477AEE001A2D57 /* RemoteJDLoginDataMapper.swift in Sources */,
 				60AFB0A029485E6400800798 /* Date.swift in Sources */,
+				60AFB0A729486D9D00800798 /* UIActivityIndicator.swift in Sources */,
 				60AFB09D294857FE00800798 /* AccountsViewViewModel.swift in Sources */,
 				4E677C18272B88A6006E325E /* HomeViewController.swift in Sources */,
 				60AFB09A294854F500800798 /* JDLocalUser.swift in Sources */,
